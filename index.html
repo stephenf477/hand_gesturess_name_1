@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>Hand Gestures Project</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src=" https://unpkg.com/ml5@0.4.3/dist/ml5.min.js "> </script>
+    </head>
+
+    <body>
+        <center>
+    <h3 class="btn btn-warning">
+<span>&#128076;</span>
+<span>&#128077;</span>
+<span>&#128406;</span>
+<span>&#9994;</span>
+<span>&#128075;</span>
+<span>&#129304;</span>
+
+
+Hand Gestures Project</h3>
+<h3>Take a selfie of a gesture to know about it's meaning</h3>
+<h4>On the following gestures the model is trained-</h4>
+<h3 <span>&#128076;</span>|<span>&#128077;</span>|<span>&#128406;</span></h3>
+</center>
+
+<table>
+    <tr>
+        <td width="900" align="center">
+            <div id="webcam">
+                <h4>Webcam View - </h2>
+                <button id="camer" onclick="take_snapshot()" style="background-color:blue; color:white; font-weight:bold; border-radius:5px;">Capture Image</button>
+            </div>
+        </td>
+        <td width="200" align="center"">
+            <span id="hand_gesture_name">Prediction - </span>
+            <div></div>
+        </td>
+        <td width="900" align="center">
+            <div id="result">
+                <h4>Snapshot-</h4>
+                <button onclick="identify_image()" style="background-color:greenyellow; border-radius:5px; color:grey">Predict Emotion</button>
+            </div>   
+                
+        </td>
+    </tr>
+</table>
+
+
+
+        
+    </body>
+</html>
